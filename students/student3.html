@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liêu Đông Huy</title>
+    <style>
+        /* Thiết lập chung */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            text-align: center;
+        }
+        
+        /* Container chính */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        /* Bố cục phần giới thiệu */
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Ảnh đại diện */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .avatar:hover {
+            transform: scale(1.1);
+        }
+
+        /* Nội dung chính */
+        .info h2 {
+            margin: 0;
+            color: black;
+        }
+
+        .info p {
+            margin: 5px 0;
+            color: black;
+            font-size: 16px;
+        }
+
+        /* Danh sách kỹ năng & học tập */
+        ul {
+            text-align: left;
+            padding-left: 30px;
+            list-style-type: "";
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Phần liên hệ */
+        .contact {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+        
+        .contact a:hover {
+            opacity: 0.8;
+        }
+        
+        .email { background: #333; }
+        .linkedin { background: #333; }
+        .github { background: #333; }
+        .cv { background: #333; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Phần giới thiệu -->
+        <div class="intro">
+            <img src="../assets/images/anhdaidien.jpg" alt="Ảnh đại diện" class="avatar">
+            <div class="info">
+                <h2>Liêu Đông Huy</h2>
+                <p><strong>Định hướng:</strong> Full-stack Developer với React.js & Node.js</p>
+                <p><strong>Giới thiệu:</strong> Tôi là một lập trình viên đam mê công nghệ, có kinh nghiệm phát triển 
+                   ứng dụng web với React, Next.js và Node.js. Tôi luôn tìm kiếm cơ hội để học hỏi và nâng cao kỹ năng.</p>
+            </div>
+        </div>
+        
+        <h2> Quá trình học tập</h2>
+        <ul>
+            <li>Đại học Hutech - Khoa CNTT (2021 - 2025)</li>
+            <li>Các môn học quan trọng: Lập trình Web, Cấu trúc dữ liệu & Giải thuật, Hệ thống phân tán</li>
+            <li>Thực hiện đồ án: Hệ thống quản lý sinh viên</li>
+        </ul>
+
+        <h2>Kỹ năng đạt được</h2>
+        <ul>
+            <li>Ngôn ngữ: JavaScript, TypeScript, PHP, Python</li>
+            <li>Frameworks: React.js, Next.js, Node.js, Redux</li>
+            <li>Thiết kế UI/UX với Figma</li>
+            <li>Xử lý dữ liệu với SQL, MongoDB</li>
+        </ul>
+
+        <h2> Dự án cá nhân</h2>
+        <ul>
+            <li><strong>Website bán hàng</strong> - Xây dựng bằng React.js & Firebase</li>
+            <li><strong>Hệ thống upload file</strong> - PHP & MySQL</li>
+            <li><strong>Ứng dụng quản lý công việc</strong> - Next.js, Redux Toolkit</li>
+        </ul>
+
+        <h2> Liên hệ</h2>
+        <div class="contact">
+            <a href="mailto:your-email@gmail.com" class="email"> Email</a>
+            <a href="https://linkedin.com/in/yourprofile" class="linkedin"> LinkedIn</a>
+            <a href="https://github.com/yourgithub" class="github"> GitHub</a>
+            <a href="your-cv.pdf" class="cv"> CV</a>
+        </div>
+    </div>
+
+</body>
+</html>
